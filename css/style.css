@@ -1,0 +1,27 @@
+.hover p {
+    display: none;
+}
+
+.hover:hover p {
+    display: block;
+}
+
+.hidden-input {
+    display: none;
+}
+
+img {
+    background-color: aliceblue;
+}
+
+.controls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: .9em;
+    border-radius: 8px;
+    color: #fff;
+}
