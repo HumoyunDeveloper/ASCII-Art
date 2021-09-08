@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ASCII Convert">
+    <title>ASCII Convert</title>
+    <meta name="keywords" content="ascii_convert">
+    <link rel="stylesheet" href="./libs/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body style="height: 100vh;background-image: url('./res/ascii.jpg');" class="position-relative overflow-hidden">
+
+    <div id="click"
+        style="background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center; display: flex; flex-direction: column;"
+        class="w-100 h-100 text-white display-4 text-center ">
+        <div class="hover">
+            <img src="./res/placeholder.png" alt="" class="rounded shadow-lg img img-round">
+            <p>Click to Upload</p>
+        </div>
+    </div>
+
+    <input id="inp" class="hidden-input" type="file" accept=".png,.jpg,image/png,image/jpeg">
+
+    <div class="controls">
+        <div class="title">Font Size: <span id="fontsize"></span>
+            <input type="range" id="range" min="2" max="10">
+            <div class="title">Colorize</div>
+            <button id="toggle">Colorize</button>
+        </div>
+    </div>
+
+    <script src="./dist/ascii_convert.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
